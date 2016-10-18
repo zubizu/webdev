@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Подключение интернета</title>
+	<meta charset="utf-8">
+	<style>
+	
+	form {
+        width: 600px;
+        text-align: center;	
+        border: 2px solid black;
+        border-right: 2px solid #9cda55;
+		border-left: 2px solid #9fc2de;
+		margin-left: auto;
+        margin-right: auto;
+    	}
+
+    div {
+    	margin-bottom:10px;
+    }	
+	
+	</style>
+
+</head>
+
+<body>
+<form>
+
+	
+	<h3> Заполните заявку  </h3>
+
+		
+	<div class="name"> 
+		Фамилия: <br/>  <input type="text" name="lastname"> <br/>
+		Имя:  <br/> <input type="text" name="firstname"/> <br/>
+		Отчество: <br/> <input type="text" name="lastname"> <br/>
+
+	</div> <br/>
+
+	<div class="sex"> Укажите Ваш пол: <br/> 
+			<select name="sex">
+				<option value="m"> Мужской </option>
+				<option value="f"> Женский </option>		
+			</select> 
+	</div>		<br/>
+
+<div class="address"> Ваш адрес: <br/>
+    <div> Выберите город: <br/>
+		<input name="city" list="city"/>
+			<datalist id="city">
+				<option label="Москва" value="Москва, Россия"/>
+				<option label="Санкт-Петербург" value="Санкт-Петербург, Россия"/>
+				<option label="Омск" value="Омская область, Россия"/>
+			</datalist>
+	</div>		
+		 <div>
+            Улица: <br/>
+            <input type="text">
+        </div>
+         <div>
+            Номер дома: <br/>
+            <input type="text">
+        </div>
+        
+<div>
+        <p>	Номер квартиры </p>
+        <input type="number" name="quantity" min="1">
+</div>
+</div>
+
+<div class="contacts">
+<div>
+	 Ваш номер телефона: <br/>
+  <input type="tel" name="usrtel">  
+</div>
+
+<div>
+
+
+<div>Введите ваш e-mail </div>		
+	<input type='email' placeholder='введите ваш email'/> <br/> <br/>
+
+</div>	
+</div>
+         <div class="tariff"> Выберите тариф: <br/>
+            <input type="radio" name="tariff" value="Solo" checked>  Хан Соло <br/>
+            <input type="radio" name="tariff" value="Ley"> Принцесса Лея <br/>
+            <input type="radio" name="tariff" value="Luck"> Люк <br/>
+            <input type="radio" name="tariff" value="Ob"> Оби Ван <br/>
+       	 </div>
+
+<div> Выберите удобный Вам день <br/>
+	 <input type="datetime-local" name="bdaytime" max="2016-11-18" min="2016-10-18">
+</div>       			 
+
+<div>
+	Откуда Вы узнали о нас? <br/>
+            <select>
+                <option>Реклама в транспорте </option>
+                <option>Из СМИ</option>
+                <option>Посоветовали друзья</option>
+                <option>Рекламная листовка</option>
+            </select>
+        </div>
+
+
+</div>
+
+	<p>
+<input type="submit" value="Отправить"/>
+</p>
+        
+</form>
+
+</body>
+</html>
