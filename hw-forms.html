@@ -3,23 +3,8 @@
 <head>
 	<title>Подключение интернета</title>
 	<meta charset="utf-8">
-	<style>
-	
-	form {
-        width: 600px;
-        text-align: center;	
-        border: 2px solid black;
-        border-right: 2px solid #9cda55;
-		border-left: 2px solid #9fc2de;
-		margin-left: auto;
-        margin-right: auto;
-    	}
+	<link rel="stylesheet" type="text/css" href="css/hw-forms.css">
 
-    div {
-    	margin-bottom:10px;
-    }	
-	
-	</style>
 
 </head>
 
@@ -31,9 +16,9 @@
 
 		
 	<div class="name"> 
-		Фамилия: <br/>  <input type="text" name="lastname"> <br/>
-		Имя:  <br/> <input type="text" name="firstname"/> <br/>
-		Отчество: <br/> <input type="text" name="lastname"> <br/>
+		Фамилия: <br/> <input type="text" name="lastname" class="bold"/> <br/>
+		Имя:  <br/> <input type="text" name="firstname" class="italic"/> <br/>
+		Отчество: <br/> <input type="text" name="lastname" class="strike"/> <br/>
 
 	</div> <br/>
 
@@ -83,10 +68,10 @@
 </div>	
 </div>
          <div class="tariff"> Выберите тариф: <br/>
-            <input type="radio" name="tariff" value="Solo" checked>  Хан Соло <br/>
-            <input type="radio" name="tariff" value="Ley"> Принцесса Лея <br/>
-            <input type="radio" name="tariff" value="Luck"> Люк <br/>
-            <input type="radio" name="tariff" value="Ob"> Оби Ван <br/>
+           <div class="solo"> <input type="radio" name="tariff" value="Solo" checked> Хан Соло <br/> </div>
+            <div class="ley"> <input type="radio" name="tariff" value="Ley"> Принцесса Лея <br/> </div>
+           <div class="luck"> <input type="radio" name="tariff" value="Luck"> Люк <br/> </div>
+           <div class="ob"> <input type="radio" name="tariff" value="Ob"> Оби Ван <br/> </div>
        	 </div>
 
 <div> Выберите удобный Вам день <br/>
