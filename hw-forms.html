@@ -31,7 +31,7 @@
 
 <div class="address"> Ваш адрес: <br/>
     <div> Выберите город: <br/>
-		<input name="city" list="city"/>
+		<input type="city" name="city" list="city"/>
 			<datalist id="city">
 				<option label="Москва" value="Москва, Россия"/>
 				<option label="Санкт-Петербург" value="Санкт-Петербург, Россия"/>
@@ -68,14 +68,14 @@
 </div>	
 </div>
          <div class="tariff"> Выберите тариф: <br/>
-           <div class="solo"> <input type="radio" name="tariff" value="Solo" checked> Хан Соло <br/> </div>
-            <div class="ley"> <input type="radio" name="tariff" value="Ley"> Принцесса Лея <br/> </div>
-           <div class="luck"> <input type="radio" name="tariff" value="Luck"> Люк <br/> </div>
-           <div class="ob"> <input type="radio" name="tariff" value="Ob"> Оби Ван <br/> </div>
+           <div class="form-checkbox"> <input type="radio" name="tariff" value="Solo" checked> Хан Соло <br/> </div>
+            <div class="form-checkbox"> <input type="radio" name="tariff" value="Ley"> Принцесса Лея <br/> </div>
+           <div class="form-checkbox"> <input type="radio" name="tariff" value="Luck"> Люк <br/> </div>
+           <div class="form-checkbox"> <input type="radio" name="tariff" value="Ob"> Оби Ван <br/> </div>
        	 </div>
 
 <div> Выберите удобный Вам день <br/>
-	 <input type="datetime-local" name="bdaytime" max="2016-11-18" min="2016-10-18">
+	 <input type="datetime-local" name="bdaytime" max="2016-11-18" min="2016-10-18"> <!-- дата наобум-->
 </div>       			 
 
 <div>
